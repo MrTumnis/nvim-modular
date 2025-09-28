@@ -4,7 +4,17 @@ function M.setup()
   -- filetype detection
   vim.filetype.add {
     extension = { crbasic = 'crbasic', cr300 = 'crbasic', cr8 = 'crbasic' },
-    pattern = { ['.*%.CRBASIC'] = 'crbasic', ['.*%.CR300'] = 'crbasic', ['.*%.CR8'] = 'crbasic' },
+    pattern = {
+      ['.*%.CRBASIC'] = 'crbasic',
+      ['.*%.CR300'] = 'crbasic',
+      ['.*%.CR8'] = 'crbasic',
+      ['*.CR1'] = 'crbasic',
+      ['*.cr1'] = 'crbasic',
+      ['*cr1X'] = 'crbasic',
+      ['*.CR1X'] = 'crbasic',
+      ['*.CR6'] = 'crbasic',
+      ['*.cr6'] = 'crbasic',
+    },
   }
 
   -- syntax on FileType=crbasic
